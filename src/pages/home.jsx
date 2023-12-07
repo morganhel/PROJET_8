@@ -1,4 +1,5 @@
 import Banner from '../components/Banner/banner';
+import '../main.css'
 
 function Home() {
   return (

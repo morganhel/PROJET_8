@@ -6,4 +6,15 @@
     opacity: 0.3;
     background: #000;
     mix-blend-mode: darken;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+
+    &__text{
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 142.6%; /* 68.448px */
+    }
 }

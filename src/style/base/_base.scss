@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
-font-family: Montserrat;
-font-size: 24px;
-font-style: normal;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+}
+
+body{
+    padding: 45px 50px 0 50px;
 }
