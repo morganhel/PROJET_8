@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    width: 1240px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    gap: 720.678px;
+
+    &__logo{
+        width: 210.322px;
+        height: 68px;
+        flex-shrink: 0;
+    }
+
+    &__nav{
+        display: flex;
+        align-items: flex-start;
+        gap: 57px;
+
+        &--link{
+            color: $color-primary;
+            text-decoration: none;
+
+            &:focus{
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
