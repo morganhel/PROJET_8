@@ -7,7 +7,7 @@ import Apropos from './pages/about';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer'
 import Error from './components/Error/error';
-import './main.css'
+import './index.css'
 
 
 ReactDOM.render(

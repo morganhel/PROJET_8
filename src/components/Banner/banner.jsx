@@ -1,5 +1,5 @@
 import Background from '../../assets/images/banner.png'
-import '../../main.css'
+import '../../index.css'
 
 function Banner() {
     return (
