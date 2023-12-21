@@ -1,13 +1,11 @@
 .header{
     display: flex;
-    width: 1240px;
+    justify-content: space-between;
     height: 68px;
-    justify-content: center;
     align-items: center;
-    gap: 720.678px;
+    margin-top: 45px;
 
     &__logo{
-        width: 210.322px;
         height: 68px;
         flex-shrink: 0;
     }

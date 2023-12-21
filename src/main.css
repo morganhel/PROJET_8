@@ -4,22 +4,21 @@
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
+  max-width: 1440px;
 }
 
 body {
-  padding: 45px 50px 0 50px;
+  margin: 0 100px;
 }
 
 .header {
   display: flex;
-  width: 1240px;
+  justify-content: space-between;
   height: 68px;
-  justify-content: center;
   align-items: center;
-  gap: 720.678px;
+  margin-top: 45px;
 }
 .header__logo {
-  width: 210.322px;
   height: 68px;
   flex-shrink: 0;
 }
@@ -37,21 +36,41 @@ body {
 }
 
 .banner {
-  width: 1240px;
   height: 223px;
   flex-shrink: 0;
   border-radius: 25px;
-  opacity: 0.3;
-  background: #000;
-  mix-blend-mode: darken;
+  margin: 50px 0 50px 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0 50px 0;
+}
+.banner__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(70%);
 }
 .banner__text {
+  position: absolute;
   color: #FFF;
   font-size: 48px;
   font-weight: 500;
   line-height: 142.6%; /* 68.448px */
+}
+
+.footer {
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 209px;
+  width: 1440px;
+  margin: 0;
+}
+.footer p {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
