@@ -3,8 +3,11 @@
 
 @import './style/base/base.scss';
 
-@import './components/Header/header.scss';
-@import './components/Banner/banner.scss';
-@import './components/Footer/footer.scss';
-@import './components/Gallery/gallery.scss';
-@import './components/Card/card.scss';
+@import './style/components/header.scss';
+@import './style/components/banner.scss';
+@import './style/components/footer.scss';
+@import './style/components/gallery.scss';
+@import './style/components/card.scss';
+@import './style/components/collapse.scss';
+
+@import './style/pages/about.scss';

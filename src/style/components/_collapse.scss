@@ -1,0 +1,58 @@
+.collapse {
+
+    &__title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px 10px 15px;
+      background-color: $color-primary;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &--txt {
+        margin: 0;
+        font-weight: 500;
+        color: $color-tertiary;
+      }
+
+      &--icon{
+        color: $color-tertiary;
+		transition: transform 0.5s ease;
+	    }
+
+	    &--icon.rotated {
+		transform: rotate(-180deg);
+	    }
+      }
+    
+  
+    &__content{
+        position: relative;
+        z-index:-1;
+        background-color: $color-secondary;
+        color: $color-primary;
+        font-weight: 400;
+        border-radius: 0 0 5px 5px;
+        padding: 20px 20px 20px 15px;
+        display: none;
+
+        &.appear{
+            display:flex;
+            transform: translateY(-50%);
+            animation: descendre 1s ease-in-out both;
+        }
+
+        @keyframes descendre {
+            from  {
+                transform : translateY(-50%);
+            }
+
+            to {
+                transform : translateY(0);
+            }
+        }
+    }
+
+  }
+  
