@@ -120,6 +120,9 @@ main {
   text-align: left;
 }
 
+.collapse {
+  overflow: hidden;
+}
 .collapse__title {
   display: flex;
   flex-direction: row;
@@ -154,12 +157,12 @@ main {
 }
 .collapse__content.appear {
   display: flex;
-  transform: translateY(-50%);
-  animation: descendre 1s ease-in-out both;
+  transform: translateY(-100%);
+  animation: descendre 0.25s ease-in-out both;
 }
 @keyframes descendre {
   from {
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
   to {
     transform: translateY(0);
