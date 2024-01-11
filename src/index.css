@@ -4,6 +4,7 @@
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
+  color: #f6f6f6;
   max-width: 1440px;
 }
 
@@ -170,6 +171,23 @@ main {
   to {
     transform: translateY(0);
   }
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style-type: none;
+}
+.tags__item {
+  text-align: center;
+  width: auto;
+  padding: 4px 30px;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #FF6060;
 }
 
 .about {

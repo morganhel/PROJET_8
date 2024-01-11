@@ -8,8 +8,8 @@ function Gallery() {
         <div className='gallery'>
             {logements.map(logement => {
                 return (
-                    <Link to="/logement">
-                    <Card image={logement.cover} title={logement.title} />
+                    <Link to={`/logement/${logement.id}`}>
+                    <Card id={logement.id} image={logement.cover} title={logement.title} />
                     </Link>
                 )
             })} 

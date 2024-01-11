@@ -1,0 +1,17 @@
+.tags {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    list-style-type: none;
+    
+    &__item {
+        text-align: center;
+        width: auto;
+        padding: 4px 30px;
+        height: 25px;
+        font-size: 14px;
+        border-radius: 10px;
+        background-color: $color-primary;
+    }
+}
