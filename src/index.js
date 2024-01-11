@@ -6,7 +6,7 @@ import Logement from './pages/logement';
 import Apropos from './pages/about';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer'
-import Error from './components/Error/error';
+import Error from './pages/error';
 import './index.css'
 
 

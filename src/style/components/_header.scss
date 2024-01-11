@@ -3,7 +3,7 @@
     justify-content: space-between;
     height: 68px;
     align-items: center;
-    margin: 45px 100px;
+    margin: 45px 100px 0 100px;
 
     &__logo{
         height: 100%;
@@ -20,6 +20,10 @@
             text-decoration: none;
 
             &:focus{
+                text-decoration: underline;
+            }
+
+            &:visited{
                 text-decoration: underline;
             }
         }
