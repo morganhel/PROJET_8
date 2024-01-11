@@ -1,0 +1,45 @@
+.info{
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+
+    &__logement{
+        &--title{
+            color:$color-primary;
+        }
+        &--loc{
+            color:$color-primary;
+        }
+    }
+
+    &__host{
+        &--name{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap:30px;
+
+            p{
+                width:90px;
+                color:$color-primary;
+                text-align: right;
+            }
+
+            img{
+                width:64px;
+                height: 64px;
+                border-radius : 100px;
+            }
+
+        }
+
+    }
+}
+
+.info2{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 76px;
+
+
+}

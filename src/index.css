@@ -11,7 +11,7 @@
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 100px;
+  margin: 50px 100px;
   gap: 50px;
 }
 
@@ -126,6 +126,7 @@ main {
 
 .collapse {
   overflow: hidden;
+  width: 100%;
 }
 .collapse__title {
   display: flex;
@@ -175,10 +176,9 @@ main {
 
 .tags {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   gap: 10px;
   list-style-type: none;
+  padding: 0;
 }
 .tags__item {
   text-align: center;
@@ -219,4 +219,38 @@ main {
   font-size: 18px;
   font-weight: 500;
   text-decoration-line: underline;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+.info__logement--title {
+  color: #FF6060;
+}
+.info__logement--loc {
+  color: #FF6060;
+}
+.info__host--name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.info__host--name p {
+  width: 90px;
+  color: #FF6060;
+  text-align: right;
+}
+.info__host--name img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+}
+
+.info2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 76px;
 }/*# sourceMappingURL=index.css.map */

@@ -3,6 +3,7 @@ import logements from '../logements.json';
 import Error from '../pages/error';
 import '../index.css';
 import Tags from '../components/Tags/tags'
+import Collapse from '../components/Collapse/collapse';
 
 function Logement() {
     const {id} = useParams()
@@ -15,20 +16,23 @@ function Logement() {
             </section>
             <section className="info">
                 <div className="info__logement">
-                    <h1>{logement.title}</h1>
-                    <p>{logement.location}</p>
-                    <Tags tags={logement.tags} />
+                    <h1 className='info__logement--title'>{logement.title}</h1>
+                    <p className="info__logement--loc">{logement.location}</p>
+                    <Tags className="info__logement--tags" tags={logement.tags} />
                 </div>
 
                 <div className="info__host">
-                    <div>
+                    <div className="info__host--name">
                         <p>{logement.host.name}</p>
-                        <img></img>
+                        <img src={logement.host.picture}></img>
                     </div>
-                    <i></i>
+                    <div></div>
                 </div>
+            </section>
 
-
+            <section className="info2">
+                <Collapse title="Description" txt={logement.description}/>
+                <Collapse title="Equipement" txt={logement.equipments}/>
 
             </section>
         </main>
