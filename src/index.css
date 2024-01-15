@@ -288,4 +288,9 @@ main {
   display: inline-flex;
   align-items: flex-start;
   gap: 76px;
+}
+
+.listEquipments {
+  color: #FF6060;
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */

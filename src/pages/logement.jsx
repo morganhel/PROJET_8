@@ -10,7 +10,6 @@ import Slideshow from '../components/Slideshow/slideshow';
 function Logement() {
     const {id} = useParams()
     const logement = logements.find((l) => l.id.toString() === id);
-    
 
     return (
     <>
@@ -38,7 +37,11 @@ function Logement() {
 
                 <section className="info2">
                     <Collapse title="Description" txt={logement.description}/>
-                    <Collapse title="Equipement" txt={logement.equipments}/>
+                    <Collapse title="Equipement" txt={
+                        <ul>
+                            {logement.equipments.map((equipment, index) =>
+                                <li key={index} className="listEquipments">{equipment}</li>)}
+                        </ul>}/>
                 </section>
             </main>
         )}
