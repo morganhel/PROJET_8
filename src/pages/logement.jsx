@@ -5,7 +5,7 @@ import Error from '../pages/error';
 import '../index.css';
 import Tags from '../components/Tags/tags'
 import Collapse from '../components/Collapse/collapse';
-// import Slideshow from '../components/Slideshow/slideshow';
+import Slideshow from '../components/Slideshow/slideshow';
 
 function Logement() {
     const {id} = useParams()
@@ -18,7 +18,7 @@ function Logement() {
             (<Navigate replace to="/404" />) : (
             <main>
                 <section>
-                    {/* <Slideshow /> */}
+                    <Slideshow pictures={logement.pictures} />
                 </section>
                 <section className="info">
                     <div className="info__logement">
