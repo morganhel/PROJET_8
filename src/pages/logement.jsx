@@ -6,6 +6,7 @@ import '../index.css';
 import Tags from '../components/Tags/tags'
 import Collapse from '../components/Collapse/collapse';
 import Slideshow from '../components/Slideshow/slideshow';
+import Rating from '../components/rating/Rating';
 
 function Logement() {
     const {id} = useParams()
@@ -31,7 +32,7 @@ function Logement() {
                             <p>{logement.host.name}</p>
                             <img src={logement.host.picture}></img>
                         </div>
-                        <div></div>
+                        <Rating  score={logement.rating}/>
                     </div>
                 </section>
 

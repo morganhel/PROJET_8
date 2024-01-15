@@ -225,6 +225,17 @@ main {
   left: 607px;
 }
 
+.rate {
+  display: flex;
+  justify-content: space-between;
+  width: 196px;
+  height: 36px;
+}
+.rate__star {
+  width: 30px;
+  height: 30px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
