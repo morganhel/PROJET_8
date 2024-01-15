@@ -1,8 +1,9 @@
 .gallery{
+    width: 100%;
     border-radius: 25px;
-    gap: 25px;
     background: #F6F6F6;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    padding: 56px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
 }

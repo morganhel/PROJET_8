@@ -17,8 +17,8 @@ function Collapse({title,txt}){
             <div onClick={Show} className="collapse__title">
                 <h2 className="collapse__title--txt">{title}</h2>
                 <span className={`collapse__title--icon ${showContent ? "rotated" : ""}`}>
-					<FontAwesomeIcon icon={faChevronUp} size="lg" />
-				</span>
+					        <FontAwesomeIcon icon={faChevronUp} size="lg" />
+				        </span>
             </div>
             <div className={`collapse__content ${showContent ? "appear" : ""}`}>{txt}</div>
         </div>
