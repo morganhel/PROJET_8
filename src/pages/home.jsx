@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Banner from '../components/Banner/banner';
+import Banner from '../components/banner/Banner';
 import Background from '../assets/images/banner_home.png';
-import Gallery from '../components/Gallery/gallery';
+import Gallery from '../components/gallery/Gallery';
 import '../index.css';
 
 class Home extends React.Component {

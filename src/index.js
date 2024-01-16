@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/home';
 import Logement from './pages/logement';
 import Apropos from './pages/about';
-import Header from './components/Header/header';
-import Footer from './components/Footer/footer'
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import Error from './pages/error';
-import './index.css'
+import './index.css';
 
 
 ReactDOM.render(

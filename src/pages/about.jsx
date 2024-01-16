@@ -1,8 +1,8 @@
 import React from 'react';
 import '../index.css';
-import Banner from '../components/Banner/banner';
+import Banner from '../components/banner/Banner';
 import Background from '../assets/images/banner_about.png';
-import Collapse from '../components/Collapse/collapse';
+import Collapse from '../components/collapse/Collapse';
 import Data from '../about.json';
 
 function About() {

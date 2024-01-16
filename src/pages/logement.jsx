@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
 import { Navigate, useParams} from 'react-router-dom';
 import logements from '../logements.json';
-import Error from '../pages/error';
 import '../index.css';
-import Tags from '../components/Tags/tags'
-import Collapse from '../components/Collapse/collapse';
-import Slideshow from '../components/Slideshow/slideshow';
+import Tags from '../components/tags/Tags';
+import Collapse from '../components/collapse/Collapse';
+import Slideshow from '../components/slideshow/Slideshow';
 import Rating from '../components/rating/Rating';
 
 function Logement() {

@@ -1,5 +1,3 @@
-
-
 function Card ({image,title}){
 
     return (
