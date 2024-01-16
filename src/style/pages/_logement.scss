@@ -10,6 +10,23 @@
         &--loc{
             color:$color-primary;
         }
+
+        &--tags {
+            display: flex;
+            gap: 10px;
+            list-style-type: none;
+            padding: 0;
+        
+            .item {
+                text-align: center;
+                width: auto;
+                padding: 4px 30px;
+                height: 25px;
+                font-size: 14px;
+                border-radius: 10px;
+                background-color: $color-primary;
+            }
+        }
     }
 
     &__host{
@@ -33,6 +50,18 @@
 
         }
 
+        &--rate{
+            display: flex; 
+            justify-content: space-between;
+            width: 196px;
+            height: 36px;
+        
+            .star {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
     }
 }
 
@@ -41,11 +70,8 @@
     align-items: flex-start;
     gap: 76px;
 
-
-
-}
-
-.listEquipments{
-    color:$color-primary;
-    list-style: none;
+    &__equipments{
+        color:$color-primary;
+        list-style: none;
+    }
 }

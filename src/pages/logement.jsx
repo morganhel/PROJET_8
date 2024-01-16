@@ -1,10 +1,10 @@
 import { Navigate, useParams} from 'react-router-dom';
 import logements from '../logements.json';
 import '../index.css';
-import Tags from '../components/tags/Tags';
 import Collapse from '../components/collapse/Collapse';
 import Slideshow from '../components/slideshow/Slideshow';
-import Rating from '../components/rating/Rating';
+import FullStar from '../assets/images/star_full.png';
+import EmptyStar from '../assets/images/star_empty.png';
 
 function Logement() {
     const {id} = useParams()
@@ -22,7 +22,10 @@ function Logement() {
                     <div className="info__logement">
                         <h1 className='info__logement--title'>{logement.title}</h1>
                         <p className="info__logement--loc">{logement.location}</p>
-                        <Tags className="info__logement--tags" tags={logement.tags} />
+                        <ul key={ logement.tags.id } className="info__logement--tags">
+                            {logement.tags.map((tags, index) =>
+                            <li key={tags[index]} className="item">{tags}</li>)}    
+                            </ul>
                     </div>
 
                     <div className="info__host">
@@ -30,7 +33,12 @@ function Logement() {
                             <p>{logement.host.name}</p>
                             <img src={logement.host.picture} alt="visage de l'hote"></img>
                         </div>
-                        <Rating  score={logement.rating}/>
+                        <div className="info__host--rate">
+			                {[1, 2, 3, 4, 5].map((level) => logement.rating >= level ? (
+					        <img key={level.toString()} className="star" src={FullStar} alt="étoile pleine"/>
+				            ) : (
+					        <img key={level.toString()} className="star" src={EmptyStar} alt="étoile vide"/> ))}
+		                </div>
                     </div>
                 </section>
 
@@ -39,7 +47,7 @@ function Logement() {
                     <Collapse title="Equipement" txt={
                         <ul>
                             {logement.equipments.map((equipment, index) =>
-                                <li key={index} className="listEquipments">{equipment}</li>)}
+                                <li key={index} className="info2__equipments">{equipment}</li>)}
                         </ul>}/>
                 </section>
             </main>
