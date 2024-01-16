@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import ArrowLeft from '../../assets/images/arrow_left.png';
 import ArrowRight from '../../assets/images/arrow_right.png';
 
@@ -34,7 +33,7 @@ function Slideshow ({pictures}) {
                     <img key={index}
                         className={ slide === index ? "slideshow__picture" : "slideshow__picture slideshow__picture--hidden" } 
                         src={image} 
-                        alt="photo de l'appartement">
+                        alt="appartement">
                     </img>
 
                 )

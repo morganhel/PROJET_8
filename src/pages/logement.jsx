@@ -28,7 +28,7 @@ function Logement() {
                     <div className="info__host">
                         <div className="info__host--name">
                             <p>{logement.host.name}</p>
-                            <img src={logement.host.picture}></img>
+                            <img src={logement.host.picture} alt="visage de l'hote"></img>
                         </div>
                         <Rating  score={logement.rating}/>
                     </div>
