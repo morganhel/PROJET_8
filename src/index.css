@@ -180,6 +180,9 @@ main {
   width: 100%;
   height: 415px;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .slideshow__picture {
   width: 100%;
@@ -187,6 +190,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
+  filter: brightness(75%);
 }
 .slideshow__picture--hidden {
   display: none;
@@ -195,6 +199,7 @@ main {
   position: absolute;
   top: 160px;
   cursor: pointer;
+  z-index: 1;
 }
 .slideshow__arrow--left {
   left: 23px;
@@ -203,10 +208,9 @@ main {
   right: 23px;
 }
 .slideshow__nb {
-  border: solid 2 px red;
+  z-index: 1;
   position: absolute;
-  top: 358px;
-  left: 607px;
+  padding-bottom: 25px;
 }
 
 .about {
