@@ -1,14 +1,17 @@
 import React from 'react';
-import Banner from '../components/banner/Banner';
 import Background from '../assets/images/banner_home.png';
 import Gallery from '../components/gallery/Gallery';
 import '../index.css';
 
 class Home extends React.Component {
+
   render() {
     return (
       <main>
-        <Banner image={Background} txt="Chez vous, partout et ailleurs"/>
+        <div className="banner">
+			    <img className="banner__img" src={Background} alt="arrière plan bannière"/>
+			    <p className="banner__text">Chez vous, <br className='banner__mobile'/>partout et ailleurs</p>
+		    </div>
         <Gallery />
       </main>
     );

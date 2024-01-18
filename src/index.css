@@ -5,7 +5,11 @@
   font-size: 24px;
   font-style: normal;
   color: #f6f6f6;
+}
+
+body {
   max-width: 1440px;
+  margin: auto;
 }
 
 main {
@@ -13,6 +17,12 @@ main {
   flex-direction: column;
   margin: 50px 100px;
   gap: 50px;
+}
+@media (max-width: 767.98px) {
+  main {
+    margin: 27px 20px;
+    gap: 22px;
+  }
 }
 
 .header {
@@ -38,6 +48,23 @@ main {
 .header__nav--link.active {
   text-decoration: underline;
 }
+@media (max-width: 767.98px) {
+  .header__nav--link {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__nav {
+    gap: 26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header {
+    margin: 20px 20px 0 20px;
+    height: 46px;
+  }
+}
 
 .banner {
   height: 223px;
@@ -54,7 +81,7 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 25px;
+  border-radius: inherit;
   filter: brightness(70%);
 }
 .banner__text {
@@ -62,6 +89,27 @@ main {
   color: #FFF;
   font-size: 48px;
   font-weight: 500;
+}
+@media (max-width: 767.98px) {
+  .banner__text {
+    font-size: 24px;
+    text-align: start;
+    left: 16px;
+  }
+}
+.banner__mobile {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .banner__mobile {
+    display: block;
+  }
+}
+@media (max-width: 767.98px) {
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+  }
 }
 
 .footer {
@@ -76,6 +124,12 @@ main {
 .footer p {
   color: white;
 }
+@media (max-width: 768.98px) {
+  .footer p {
+    width: 40%;
+    text-align: center;
+  }
+}
 
 .gallery {
   width: 100%;
@@ -85,6 +139,15 @@ main {
   padding: 56px 50px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 60px;
+}
+@media (max-width: 768.98px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+    background: none;
+  }
 }
 
 .card {
@@ -120,6 +183,7 @@ main {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
+  width: 55%;
 }
 
 .collapse {

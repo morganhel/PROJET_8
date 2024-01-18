@@ -22,7 +22,22 @@
             &.active{
                 text-decoration: underline;
             }
+            
+            @media (max-width:767.98px){
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
         }
 
+        @media (max-width:767.98px){
+            gap: 26px;
+        }
+
+    }
+
+    @media (max-width:767.98px){
+        margin:20px 20px 0 20px;
+        height: 46px;
     }
 }
