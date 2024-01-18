@@ -7,8 +7,6 @@ function Slideshow ({pictures}) {
 
     const l=pictures.length
 
-    
-
     const nextSlide = () => {
         setSlide(slide === l -1 ? 0 : slide + 1)
     }
