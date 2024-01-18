@@ -2,4 +2,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 0 108.5px;
+
+    @media (max-width : $breakpoint-mobile){
+      gap:20px;
+      padding:0;
+    }
   }
