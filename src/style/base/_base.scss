@@ -6,6 +6,7 @@
     font-size: 24px;
     font-style: normal;
     color : $color-secondary;
+    margin: 0;
 }
 
 body{
@@ -21,7 +22,7 @@ main{
     margin:50px 100px;
     gap: 50px;
 
-    @media (max-width:767.98px){
+    @media (max-width:$breakpoint-tablette){
         margin: 27px 20px;
         gap:22px;
     }

@@ -29,8 +29,12 @@
         cursor: pointer;
         z-index: 1;
 
-        @media (max-width: $breakpoint-mobile){
+        @media (max-width: $breakpoint-tablette){
             width: 24px;
+            top:180px;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
             top:110px;
         }
 

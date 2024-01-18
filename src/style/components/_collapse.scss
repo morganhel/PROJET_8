@@ -20,6 +20,10 @@
         @media (max-width: $breakpoint-mobile){
             font-size: 13px;
         }
+
+        @media (max-width: $breakpoint-tablette){
+            font-size: 18px;
+        }
       }
 
       &--icon{
@@ -45,6 +49,10 @@
 
         @media (max-width: $breakpoint-mobile){
             font-size: 13px;
+        }
+
+        @media (max-width: $breakpoint-tablette){
+            font-size: 18px;
         }
 
         &.appear{

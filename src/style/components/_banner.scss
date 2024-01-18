@@ -20,9 +20,13 @@
         font-size: 48px;
         font-weight: 500;
 
-        @media (max-width:767.98px){
-            font-size: 24px;
+        @media (max-width:$breakpoint-tablette){
             text-align: start;
+            left:16px;
+            font-size: 32px;
+        }
+
+        @media (max-width:$breakpoint-mobile){
             left:16px;
         }
     }
@@ -30,12 +34,12 @@
     &__mobile{
         display: none;
 
-        @media (max-width: 767.98px){
+        @media (max-width: $breakpoint-tablette){
             display: block;
         }
     }
 
-    @media (max-width:767.98px){
+    @media (max-width:$breakpoint-mobile){
         height: 111px;
         @include small-radius;
     }

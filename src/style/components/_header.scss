@@ -23,20 +23,20 @@
                 text-decoration: underline;
             }
             
-            @media (max-width:767.98px){
+            @media (max-width:$breakpoint-mobile){
                 font-size: 12px;
                 text-transform: uppercase;
             }
 
         }
 
-        @media (max-width:767.98px){
+        @media (max-width:$breakpoint-mobile){
             gap: 26px;
         }
 
     }
 
-    @media (max-width:767.98px){
+    @media (max-width:$breakpoint-tablette){
         margin:20px 20px 0 20px;
         height: 46px;
     }

@@ -1,7 +1,6 @@
 .info{
     display: flex;
     justify-content: space-between;
-    gap: 45px;
 
     @media (max-width: $breakpoint-mobile){
         flex-direction: column;
@@ -10,6 +9,8 @@
     &__logement{
         &--title{
             color:$color-primary;
+            font-size:36px;
+            font-weight: 500;
 
             @media (max-width: $breakpoint-mobile){
                 font-size: 18px;
@@ -28,7 +29,8 @@
             display: flex;
             gap: 10px;
             list-style-type: none;
-            padding: 0;
+            padding: 20px 0;
+
         
             .item {
                 text-align: center;
@@ -49,6 +51,11 @@
     }
 
     &__host{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+
+
         &--name{
             display: flex;
             align-items: center;
@@ -63,6 +70,7 @@
                 width:90px;
                 color:$color-primary;
                 text-align: right;
+                font-size: 18px;
 
                 @media (max-width: $breakpoint-mobile){
                     font-size: 12px;
@@ -95,8 +103,8 @@
             }
         
             .star {
-                width: 30px;
-                height: 30px;
+                width: 28px;
+                height: 28px;
 
                 @media (max-width: $breakpoint-mobile){
                     width:15px;
@@ -131,11 +139,15 @@
             @media (max-width: $breakpoint-mobile){
                 font-size: 13px;
             }
+
+            @media (max-width: $breakpoint-tablette){
+                font-size: 18px;
+            }
         }
 
     }
 
-    @media (max-width: $breakpoint-mobile){
+    @media (max-width: $breakpoint-tablette){
         flex-direction: column;
         gap: 20px;
     }
