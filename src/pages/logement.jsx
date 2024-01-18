@@ -45,9 +45,9 @@ function Logement() {
                 <section className="info2">
                     <Collapse title="Description" txt={logement.description}/>
                     <Collapse title="Equipement" txt={
-                        <ul>
+                        <ul className="info2__equipments">
                             {logement.equipments.map((equipment, index) =>
-                                <li key={index} className="info2__equipments">{equipment}</li>)}
+                                <li key={index} className="info2__equipments--items">{equipment}</li>)}
                         </ul>}/>
                 </section>
             </main>

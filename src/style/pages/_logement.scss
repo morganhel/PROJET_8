@@ -3,12 +3,25 @@
     justify-content: space-between;
     gap: 45px;
 
+    @media (max-width: $breakpoint-mobile){
+        flex-direction: column;
+    }
+
     &__logement{
         &--title{
             color:$color-primary;
+
+            @media (max-width: $breakpoint-mobile){
+                font-size: 18px;
+            }
         }
         &--loc{
             color:$color-primary;
+            font-size: 18px;
+
+            @media (max-width: $breakpoint-mobile){
+                font-size: 14px;
+            }
         }
 
         &--tags {
@@ -23,8 +36,14 @@
                 padding: 4px 30px;
                 height: 25px;
                 font-size: 14px;
-                border-radius: 10px;
+                @include small-radius;
                 background-color: $color-primary;
+
+                @media (max-width: $breakpoint-mobile){
+                    font-size: 10px;
+                    height: 18px;
+                    padding-top: 2px;
+                }
             }
         }
     }
@@ -36,16 +55,30 @@
             justify-content: flex-end;
             gap:30px;
 
+            @media (max-width: $breakpoint-mobile){
+                gap: 10px;
+            }
+
             p{
                 width:90px;
                 color:$color-primary;
                 text-align: right;
+
+                @media (max-width: $breakpoint-mobile){
+                    font-size: 12px;
+                    width: 45px;
+                }
             }
 
             img{
                 width:64px;
                 height: 64px;
                 border-radius : 100px;
+
+                @media (max-width: $breakpoint-mobile){
+                    width: 32px;
+                    height: 32px;
+                }
             }
 
         }
@@ -55,23 +88,55 @@
             justify-content: space-between;
             width: 196px;
             height: 36px;
+            
+            @media (max-width: $breakpoint-mobile){
+                width: 98px;
+                height: 18px;
+            }
         
             .star {
                 width: 30px;
                 height: 30px;
+
+                @media (max-width: $breakpoint-mobile){
+                    width:15px;
+                    height:15px;
+                }
             }
+        }
+
+        @media (max-width: $breakpoint-mobile){
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
         }
 
     }
 }
 
 .info2{
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     gap: 76px;
 
     &__equipments{
-        color:$color-primary;
-        list-style: none;
+        padding:0;
+        margin:0;
+
+        &--items{
+            color:$color-primary;
+            list-style: none;
+
+            @media (max-width: $breakpoint-mobile){
+                font-size: 13px;
+            }
+        }
+
+    }
+
+    @media (max-width: $breakpoint-mobile){
+        flex-direction: column;
+        gap: 20px;
     }
 }
