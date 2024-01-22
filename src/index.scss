@@ -1,0 +1,15 @@
+@import './style/abstracts/variables.scss';
+@import './style/abstracts/mixins.scss';
+
+@import './style/base/base.scss';
+
+@import './style/components/header.scss';
+@import './style/components/banner.scss';
+@import './style/components/footer.scss';
+@import './style/components/gallery.scss';
+@import './style/components/collapse.scss';
+@import './style/components/slideshow';
+
+@import './style/pages/about.scss';
+@import './style/pages/error.scss';
+@import './style/pages/logement.scss';
