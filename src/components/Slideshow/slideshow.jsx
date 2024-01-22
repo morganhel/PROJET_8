@@ -33,7 +33,7 @@ function Slideshow ({pictures}) {
 
 
             {pictures.map((image,index) =>{
-                //on affiche chaque image 
+                //on affiche l'image avec l'id qui correspond au state
                 return(
                     <img key={index}
                         className={ slide === index ? "slideshow__picture" : "slideshow__picture slideshow__picture--hidden" } 
