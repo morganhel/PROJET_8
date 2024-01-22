@@ -28,6 +28,7 @@
 
         @media (max-width:$breakpoint-mobile){
             left:16px;
+            font-size: 24px;
         }
     }
 
@@ -42,5 +43,6 @@
     @media (max-width:$breakpoint-mobile){
         height: 111px;
         @include small-radius;
+        margin-top:0;
     }
 }

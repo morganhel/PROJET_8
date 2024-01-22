@@ -11,6 +11,7 @@ function Home (){
 			  <p className="banner__text">Chez vous, <br className='banner__mobile'/>partout et ailleurs</p>
 		  </div>
       <Gallery />
+      {/* composant react pour l'affichage des cartes logements */}
     </main>
     );
 }
