@@ -9,8 +9,8 @@ import Footer from './components/footer/Footer';
 import Error from './pages/error';
 import './index.css';
 
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
       <Router>
         <Header />
@@ -23,5 +23,4 @@ ReactDOM.render(
         <Footer />
       </Router>
   </React.StrictMode>,
-document.getElementById('root')
 )
