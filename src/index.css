@@ -85,7 +85,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
-  filter: brightness(55%);
+  filter: brightness(40%);
 }
 .banner__text {
   position: absolute;
