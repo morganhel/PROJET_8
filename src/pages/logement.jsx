@@ -53,8 +53,8 @@ function Logement() {
                 <section className="info2">
                     {/* on réutilise l'élément collapse pour la dercription et les équipements */}
                     <Collapse title="Description" txt={logement.description}/>
-                    <Collapse title="Equipement" txt={
-                        //on construit une liste des équipements présent dans l'objet equipents 
+                    <Collapse title="Equipements" txt={
+                        //on construit une liste des équipements présent dans l'objet equipements 
                         <ul className="info2__equipments">
                             {logement.equipments.map((equipment, index) =>
                                 <li key={index} className="info2__equipments--items">{equipment}</li>)}

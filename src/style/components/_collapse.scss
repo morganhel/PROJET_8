@@ -11,6 +11,10 @@
       background-color: $color-primary;
       border-radius: 5px;
       cursor: pointer;
+
+      @media (max-width: $breakpoint-mobile){
+        height: 30px;
+      }
   
       &--txt {
         margin: 0;
@@ -20,21 +24,21 @@
         @media (max-width: $breakpoint-mobile){
             font-size: 13px;
         }
-
-        @media (max-width: $breakpoint-tablette){
-            font-size: 18px;
-        }
       }
 
       &--icon{
         color: $color-tertiary;
 		transition: transform 0.5s ease;
-	    }
+
+        @media (max-width: $breakpoint-mobile){
+            font-size:15px;
+        }
 
 	    &--icon.rotated {
 		transform: rotate(-180deg);
 	    }
       }
+    }
     
   
     &__content{
@@ -49,10 +53,6 @@
 
         @media (max-width: $breakpoint-mobile){
             font-size: 13px;
-        }
-
-        @media (max-width: $breakpoint-tablette){
-            font-size: 18px;
         }
 
         &.appear{
@@ -72,5 +72,4 @@
         }
     }
 
-  }
-  
+}

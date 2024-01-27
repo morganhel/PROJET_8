@@ -17,10 +17,10 @@ function Collapse({title,txt}){
       // on affiche le composant collapse replié
         <div className="collapse">
             <div onClick={Show} className="collapse__title">
-                <h2 className="collapse__title--txt">{title}</h2>
+                <p className="collapse__title--txt">{title}</p>
                 <span className={`collapse__title--icon ${showContent ? "rotated" : ""}`}>
                   {/* si le state de show content est true on applique l'animation rotated à l'icon chevron  */}
-					        <FontAwesomeIcon icon={faChevronUp} size="lg" />
+					        <FontAwesomeIcon icon={faChevronUp} size="lg"/>
 				        </span>
             </div>
             <div className={`collapse__content ${showContent ? "appear" : ""}`}>{txt}</div>

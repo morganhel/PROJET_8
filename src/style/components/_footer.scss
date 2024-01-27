@@ -8,12 +8,17 @@
     margin: 0;
     gap:28.5px;
 
+    @media (max-width:$breakpoint-mobile) {
+        gap:15px;
+    }
+
     p {
         color: white;
 
         @media (max-width:$breakpoint-mobile) {
-            width: 40%;
+            width: 25%;
             text-align: center;
+            font-size: 12px;
         }
     }
 
